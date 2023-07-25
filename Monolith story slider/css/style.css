@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'CircularStd';
+    src: url(../fonts/CircularStd-Book.woff2);
+}
+
+.timeline-icon i:before {
+    font-size: 55px;
+}
+
+img {
+    height: 55px;
+}
+
+/* Styling for the timeline container */
+
+* {
+    color: #fff;
+    font-family: 'CircularStd', sans-serif;
+}
+
+/* Styling for the timeline container */
+
+.timeline-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0px 80px 80px 80px;
+    background-color: #000000;
+}
+
+/* Styling for the timeline main heading */
+
+.timeline-title {
+    text-align: center;
+    color: #fff;
+}
+
+/* Styling for the timeline slides */
+
+.timeline-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
+/* Styling for the timeline icons */
+
+.timeline-icon {
+    /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+    display: block;
+    text-align: left;
+}
+
+/* Styling for the timeline dates */
+
+.timeline-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Styling for the timeline pagination buttons */
+
+.timeline-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling for the timeline line */
+
+.timeline-line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #877b4d;
+    margin-top: 20px;
+}
+
+/* Styling for the timeline dots */
+
+.timeline-dot {
+    position: absolute;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    background-color: #877b4d;
+    border-radius: 50%;
+}
+
+/* Styling for the timeline arrow */
+
+.timeline-arrow {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #877b4d;
+}
+
+/* Styling for the timeline dates container */
+
+.timeline-dates-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+/* Styling for the timeline dates */
+
+.timeline-date-item {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Styling for active timeline date */
+
+.timeline-date-item.active {
+    color: #877b4d;
+}
+
+/* Styling for the timeline pagination buttons */
+
+.timeline-pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-pagination-container button {
+    margin: 0 5px;
+}
